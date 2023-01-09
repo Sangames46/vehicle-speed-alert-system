@@ -4,7 +4,7 @@ FROM node:12.16.3-alpine as build
 WORKDIR /app
 COPY package*.json ./
 COPY .env ./
-RUN npm install --legacy-peer-deps
+RUN npm install --save-dev eslint-plugin-react --legacy-peer-deps
 COPY . .
 # RUN npm run build
 
