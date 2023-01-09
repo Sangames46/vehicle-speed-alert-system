@@ -151,7 +151,7 @@ function MyComponent() {
     id: 'google-map-script',
     googleMapsApiKey: "AIzaSyB9X4dW_ProF_yw5tL3pp7gmjWLCpenZrY"
   })
-
+  eslint-disable-next-line
   const [map, setMap] = React.useState(null)
 
   const onLoad = React.useCallback(function callback(map) {
